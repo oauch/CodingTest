@@ -4,10 +4,7 @@ function solution(price, money, count) {
     for (let i = 1; i <= count; i++) {
         allMoney += price * i;
     }
-    
-    if (allMoney <= money) {
-        return 0;
-    }
-    return allMoney - money;
-    
+
+    return allMoney <= money ? 0 : allMoney - money;
 }
+
